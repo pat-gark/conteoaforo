@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyController</title>
+    <style>
+        *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .contenedor{
+        padding: 60px 0;
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .titulo{
+        color: #642a73;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+
+    /*Header*/
+    header{
+        width: 100%;
+        height: 600px;
+        background: #00416A; 
+        background: -webkit-linear-gradient(to right, hsla(200, 6%, 90%, 0.5), hsla(203, 100%, 21%, 0.637)), url(https://uploads-ssl.webflow.com/5ec994b5518a6ecd19d5d11c/5fc274ede4b22255ed774001_web-1012467_1920a.jpg);
+        background: linear-gradient(to right, hsla(200, 6%, 90%, 0.5), hsla(203, 100%, 21%, 0.637)), url(https://uploads-ssl.webflow.com/5ec994b5518a6ecd19d5d11c/5fc274ede4b22255ed774001_web-1012467_1920a.jpg) ;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;   
+    }
+
+    nav{
+        text-align: right;
+        padding: 30px 50px 0 0;
+    }
+
+    nav > a{
+        color: white;
+        font-weight: 300;
+        text-decoration: none;
+        margin-right: 10px;
+
+    }
+
+    nav > a:hover{
+        text-decoration: underline;
+    }
+
+    header .textos-header{
+        display: flex;
+        height: 430px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .textos-header h1{
+        font-size: 50px;
+        color: white;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+        color: white;
+    }
+
+
+    .wave{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /*About us */
+
+    .contenedor-sobre-nosotros{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .imagen-control{
+        width: 60%;
+    }
+
+    .recuadro{
+        background-color: rgb(0, 0, 0);
+        width: 150px;
+        height: 50px;
+        margin: auto;
+    }
+
+    .recuadro1{
+        background-color: rgb(255, 255, 255);
+        width: 142px;
+        height: 43px;
+        margin-top: -46px;
+        margin-left: 73px;
+       
+    }
+
+    .Personas{
+        font-size: 30px;
+        margin-left: 120px;
+        margin-top: -37px;
+    }
+    .contenido-textos1{
+        margin-top: 10px;
+    }
+
+    .barra{
+        height: 160px;
+        width: 160px;
+        background: yellow;
+        position: relative;
+        margin: 50px auto;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .cont{
+        height: 80px;
+        width: 160px;
+    }
+    
+    .circulocentro{
+        width: 120px;
+        height: 120px;
+        background-color: rgb(255, 251, 251);
+        border-radius: 50%;
+        position: relative;
+        margin: -190px auto;
+    }
+    .rectangulo{
+        width: 160px;
+        height: 80px;
+        background-color: rgb(255, 251, 251);
+        position: relative;
+        margin: 130px auto;
+    }
+
+    footer{
+        background: #414141;
+        padding: 60px 0 30px 0;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .contenedor-footer{
+        display: flex;
+        width: 90%;
+        justify-content: space-evenly;
+        margin: auto;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .content-foo{
+        text-align: center;
+    }
+
+    .content-foo h4{
+        color: white;
+        border-bottom: 3px solid #af20d3;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+
+    .content-foo p{
+        color:#ccc;
+    }
+
+    .titulo-final{
+        text-align: center;
+        font-size: 24px;
+        margin: 20px 0 0;
+        color: #9e9797;
+    }
+
+    .ControlAforo{
+        background:rgb(255, 251, 251);
+    }
+
+    /*Equipo*/        
+    .presentacion{
+        text-align: justify;
+    }
+
+    .contacto{
+        text-align: center;
+        margin-bottom: 50px;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#vamos">Control de Aforo</a>
+        </nav>
+        <section class="textos-header">
+            <h1>EasyController</h1>
+            <h2>Tan seguro como en casa</h2>
+
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C149.77,150.00 352.23,-49.99 499.26,49.99 L499.26,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+    </header>
+    <main>
+        <section class="ControlAforo">
+            <div class="contenedor">               
+                <h2 class="titulo" id="vamos">Control de Aforo</h2>
+                <div class="contenedor-sobre-nosotros">
+                    <img src="https://gunnebointegratedsecurity.es/wp-content/uploads/2020/04/counter-supervisor-info-pass.png" alt="" class="imagen-control">
+                    <div class="contenido-textos1">
+                        <h2>Cantidad de Personas</h2>
+                        <div class="recuadro"></div>
+                        <div class="recuadro1"></div>
+                        <p class="Personas" id="personas"></p>
+                        <div id="bporcentaje"></div>
+                        <div class="circulocentro"></div>
+                        <div class="rectangulo">
+                            <h1 style="position: relative; margin: auto 10px; color: rgb(78, 82, 143);" >Capacidad</h1>
+                            <p id="porcentaje" style="position: relative; margin: auto 65px; color: rgb(0, 0, 0); font-size: 25px;" ></p>
+                            <button style="margin-top:20px;margin-left:25px" id="reinicio">
+                                Reiniciar contador
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyCR-5WD9f7FXWMxLWYyb_-e06nBqzmjIHs",
+        authDomain: "aforolocal-15a56.firebaseapp.com",
+        databaseURL: "https://aforolocal-15a56-default-rtdb.firebaseio.com",
+        projectId: "aforolocal-15a56",
+        storageBucket: "aforolocal-15a56.appspot.com",
+        messagingSenderId: "388361936480",
+        appId: "1:388361936480:web:66eeb455680d4849ef6d05"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="datos.js"></script>
+
+    <footer>
+        <h1 class="contacto">Contacto</h1>
+        <div class="contenedor-footer">
+            
+            <div class="content-foo">
+                <h4>Phone</h4>
+                <p>0986079171</p>
+            </div>
+            <div class="content-foo">
+                <h4>E-mail</h4>
+                <p>easycontroller.espe@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <p>Quito - Ecuador</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; EasyController</h2>
+    </footer>
+</body>
+</html>
+
